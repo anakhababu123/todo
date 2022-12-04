@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1,initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Addition</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        {% comment %} <input type="text" name="num1" placeholder="enter the number"> {% endcomment %}
+        {% comment %} <input type="text" name="num2" placeholder="enter the number"> {% endcomment %}
+        <button type="submit">add</button>
+    </form>
+    {{result}}
+</body>
+</html>
